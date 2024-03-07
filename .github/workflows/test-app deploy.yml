@@ -26,6 +26,7 @@ jobs:
       - name: Deploy to Azure
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
+          server:  'waws-prod-dxb-007.ftp.azurewebsites.windows.net/site '
           app-name: 'test-app'
           slot-name: 'production' 
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
