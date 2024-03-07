@@ -1,4 +1,4 @@
-name:  Deploy test-ap to Azure
+name:  FTP Deploy to Azure
 on:
   push:
     branches:
@@ -32,9 +32,6 @@ jobs:
           password: 'r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg'
           local-dir: ./dist/test-app/
           remote-dir: /site/wwwroot/
-          timeout-minutes: 20
-          debug: true
           protocol: ftps 
           port: 990
-          passive-mode:  true
-          explicit-tls: false 
+         
