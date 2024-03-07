@@ -32,4 +32,5 @@ jobs:
           password: 'r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg'
           remote-dir: /site/wwwroot/
           local-dir: ./dist/test-app/
+          timeout-minutes : 20
           
