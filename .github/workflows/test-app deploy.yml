@@ -28,6 +28,6 @@ jobs:
         with:
           app-name: 'test-app'
           slot-name: 'production' 
-          publish-profile: waws-prod-dxb-007.ftp.azurewebsites.windows.net/site
+          publish-profile: 'waws-prod-dxb-007.ftp.azurewebsites.windows.net/site'
           package: ./dist/test-app
           
