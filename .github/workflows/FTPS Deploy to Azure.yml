@@ -27,9 +27,9 @@ jobs:
       - name: FTPS Deploy to Azure
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.AZURE_FTP_SERVER }}
-          username: ${{ secrets.AZURE_FTP_USERNAME }}
-          password: ${{ secrets.AZURE_FTP_PASSWORD }}
+          server: waws-prod-dxb-007.ftp.azurewebsites.windows.net
+          username: megaclaim__test\$megaclaim__test
+          password: r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg
           local-dir: ./dist/test-app/
           remote-dir: /site/wwwroot/
           protocol: ftps
