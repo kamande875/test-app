@@ -24,7 +24,7 @@ jobs:
         run: npm run build --prod
 
       - name: current directory
-        run: pwd
+        run: ls
         
       - name: FTP Deploy to Azure
         id: ftp-deploy
