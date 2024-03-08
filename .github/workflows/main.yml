@@ -23,3 +23,12 @@ jobs:
 
     - name: Build Angular App
       run: npm run build
+
+    - name: 'Deploy to Azure WebApp'
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+          app-name: test-app
+          username: 'megaclaim__test\$megaclaim__test'
+          server: 'waws-prod-dxb-007.ftp.azurewebsites.windows.net'
+          password: ${{ secrets.AZURE_FTP_PASSWORD }}
