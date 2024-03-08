@@ -34,4 +34,4 @@ jobs:
           remote-dir: /site/wwwroot/
           protocol: ftps
           port: 990
-          fail-on-warnings: false
+          timeout-seconds: 1200
