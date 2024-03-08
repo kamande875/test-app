@@ -33,5 +33,5 @@ jobs:
           local-dir: ./dist/test-app/
           server-dir: /site/wwwroot/
           port: 990
-          protocol: ftps
+        
          
