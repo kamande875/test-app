@@ -28,11 +28,13 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: waws-prod-dxb-007.ftp.azurewebsites.windows.net
-          username: 'megaclaim__test\$megaclaim__test'
-          password: 'r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg'
-          local-dir: ./dist/test-app/
+          username: megaclaim__test\$megaclaim__test
+          password: r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg
+          local-dir: ./../../dist/test-app/
           server-dir: /site/wwwroot/
           port: 990
+          protocol: ftps
+          timeout: 8000
      
         
          
