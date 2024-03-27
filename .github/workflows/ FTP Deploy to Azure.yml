@@ -3,7 +3,7 @@ name: FTP Deploy to Azure
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
@@ -38,7 +38,7 @@ jobs:
           server-dir: /site/wwwroot/
           port: 990
           protocol: ftps
-          timeout: 60000
+      
         
 
      
