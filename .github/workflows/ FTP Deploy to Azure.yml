@@ -1,8 +1,9 @@
-name:  FTP Deploy to Azure
+name: FTP Deploy to Azure
+
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
@@ -23,14 +24,23 @@ jobs:
       - name: Build Angular App
         run: npm run build --prod
 
+      - name: Display Current Directory Contents
+        run: ls
+
       - name: FTP Deploy to Azure
         id: ftp-deploy
         uses: azure/webapps-deploy@v2
         with:
-          server: ftps://waws-prod-dxb-007.ftp.azurewebsites.windows.net
-          username: megaclaim__test\\$megaclaim__test
+          server: waws-prod-dxb-007.ftp.azurewebsites.windows.net
+          username: megaclaim__test\$megaclaim__test
           password: r51i2GeuirQzjAg4lkKXX2n8wHBNHmud2qm6GAu1LoFR31hAnmdNM0x6eArg
           local-dir: ./dist/test-app/
           server-dir: /site/wwwroot/
           port: 990
+          protocol: ftps
+      
+        
+
+     
+        
          
